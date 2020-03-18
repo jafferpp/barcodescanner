@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="barcode_reader.MainPage">
+
+    <StackLayout>
+        <Label Text="Barcode scanner" TextColor="Red" FontSize="Large" HorizontalOptions="Center" />
+        <Button Text="scan barcode" Clicked="Button_clicked"/>
+        
+            <Frame BackgroundColor="AliceBlue" Padding="5" HorizontalOptions="Center" WidthRequest="400" HeightRequest="400" 
+               CornerRadius="40" >
+                
+            <Label Text="" x:Name="codes" WidthRequest="40" TextColor="Green" HorizontalTextAlignment="Center" />
+        </Frame>
+        
+        
+        <Label Text="created by Jaffer p.p" VerticalOptions="EndAndExpand" />
+
+        
+    </StackLayout>
+
+</ContentPage>
